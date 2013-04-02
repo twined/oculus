@@ -1,0 +1,17 @@
+<h3>Top content</h3>
+        {% for source, source_data in data.items %}
+            <li>
+                {{ source }}
+                |
+                {{ source_data.pageviews }}
+                |
+                {{ source_data.unique_pageviews }}
+                |
+                {{ source_data.time_on_page }}
+                |
+                {{ source_data.entries }}
+                |
+                {{ source_data.exits }}
+                |
+            </li>
+        {% endfor %}

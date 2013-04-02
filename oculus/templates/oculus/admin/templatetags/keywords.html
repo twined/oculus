@@ -1,0 +1,9 @@
+        <h3>Populære søkeord</h3>
+        <table class="table table-striped">
+        {% for keyword, visits in data.items %}
+            <tr>
+                <td>{{ keyword }}</td>
+                <td>{{ visits }}</td>
+            </tr>
+        {% endfor %}
+        </table>

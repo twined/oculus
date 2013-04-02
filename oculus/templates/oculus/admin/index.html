@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% load oculus_tags %}
+{% block content %}
+    <h1>Statistikk</h1>
+    <div class="stats">
+        Laster statistikk, vennligst vent..
+    </div>
+
+    <script type="text/javascript">
+        $('.stats').load('hent/');
+    </script>
+{% endblock content %}

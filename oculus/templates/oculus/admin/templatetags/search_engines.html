@@ -1,0 +1,13 @@
+<h3>Search engines</h3>
+        {% for source, source_data in data.items %}
+            <li>
+                {{ source }}
+                |
+                {{ source_data.pageviews }}
+                |
+                {{ source_data.time_on_site }}
+                |
+                {{ source_data.exits }}
+                |
+            </li>
+        {% endfor %}

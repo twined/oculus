@@ -1,0 +1,16 @@
+<h3>Popular posts</h3>
+        {% for os, os_data in data.items %}
+            <h4>{{ os }}</h4>
+            {% for browser, browser_data in os_data.items %}
+            <h5>{{ browser }}</h5>
+            <ul>
+                {% for ver, hits in browser_data.items %}
+                    <li>{{ ver }} - {{ hits }}</li>
+                {% endfor %}
+
+            </ul>
+            {% endfor %}
+            <code><pre>
+                {{ value }}
+            </pre></code>
+        {% endfor %}
