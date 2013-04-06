@@ -1,5 +1,9 @@
 {% extends "admin/base.html" %}
 {% load oculus_tags %}
+{% load static from staticfiles %}
+{% block extra_js %}
+    <script src="{% static 'js/libs/chart/chart.min.js' %}"></script>
+{% endblock extra_js %}
 {% block content %}
     <h1>Statistikk</h1>
     <div class="stats">
