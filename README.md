@@ -10,6 +10,13 @@ Installation:
 
 Add `oculus` to `INSTALLED_APPS` in your `conf/settings.py`
 
+    # oculus settings.py vars
+
+    GOOGLE_ANALYTICS_LOGIN = 'your@google.login.com'
+    GOOGLE_ANALYTICS_PASSWORD = 'yourgooglepass'
+    GOOGLE_ANALYTICS_APP_NAME = 'yourappname'
+    GOOGLE_ANALYTICS_TABLE_ID = 'yourtableid'
+
 
 Usage:
 ------
