@@ -224,6 +224,22 @@ def get_pageviews():
         data['pageviews'] = entry.get_object('ga:pageviews').value
         data['visits'] = entry.get_object('ga:visits').value
 
+    # get last week
+    start = datetime.date.today() - datetime.timedelta(days=8)
+    end = datetime.date.today() - datetime.timedelta(days=1)
+
+    data_query = gdata.analytics.client.DataFeedQuery({
+        'ids': settings.GOOGLE_ANALYTICS_TABLE_ID,
+        'start-date': str(start),
+        'end-date': str(end),
+        'metrics': 'ga:visits,ga:pageviews',
+        'max-results': "10",
+    })
+    xml = gdata_client.GetDataFeed(data_query)
+    for entry in xml.entry:
+        data['week_pageviews'] = entry.get_object('ga:pageviews').value
+        data['week_visits'] = entry.get_object('ga:visits').value
+
     return data
 
 

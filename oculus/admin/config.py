@@ -7,10 +7,16 @@ APP_ADMIN_URLS = {
 
 APP_ADMIN_MENU = {
     'Statistikk': {
-        'Oversikt': {
-            'url': reverse_lazy('admin:oculus:index'),
-            'icon': 'icon-th-list',
-            'order': 0,
-        },
+        'anchor': 'stats',
+        'bgcolor': '#2EAC42',
+        'icon': 'fa fa-eye icon',
+
+        'menu': {
+            'Oversikt': {
+                'url': reverse_lazy('admin:oculus:index'),
+                'icon': 'icon-th-list',
+                'order': 0,
+            },
+        }
     }
 }

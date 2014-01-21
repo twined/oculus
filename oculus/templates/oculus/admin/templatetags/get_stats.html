@@ -1,23 +1,23 @@
 {% load oculus_tags %}
+{% pageviews %}
+
 <div class="row">
-    <div class="span9">
+    <div class="col-md-12">
         {% hits_this_week %}
     </div>
 </div>
-<div class="row stats">
 
-    <div class="span4">
+<div class="row stats">
+    <div class="col-md-6">
         {% popular_posts %}
     </div>
-    <div class="span3">
+    <div class="col-md-6">
         {% keywords %}
     </div>
-    <div class="span2">
-        {% pageviews %}
-    </div>
 </div>
+
 <div class="row">
-    <div class="span9">
+    <div class="col-md-12">
         {% referals %}
     </div>
 </div>
