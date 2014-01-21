@@ -1,20 +1,24 @@
-        <h3>Referals</h3>
-        <table class="table table-striped">
-            <th>
-                Kilde
-            </th>
-            <th>
-                Bane
-            </th>
-            <th>
-                Treff
-            </th>
-        {% for source, source_data in data.items %}
+        <section class="panel panel-default">
+            <section class="panel-heading font-bold">
+                Referals
+            </section>
+            <table class="table table-striped">
+                <th>
+                    Kilde
+                </th>
+                <th>
+                    Bane
+                </th>
+                <th>
+                    Treff
+                </th>
+            {% for source, source_data in data.items %}
 
-            <tr>
-                <td>{{ source }}</td>
-                <td><a href="http://{{ source }}{{ source_data.path }}">{{ source_data.path }}</a></td>
-                <td>{{ source_data.pageviews }}</td>
-            </tr>
-        {% endfor %}
-        </table>
+                <tr>
+                    <td>{{ source }}</td>
+                    <td><a href="http://{{ source }}{{ source_data.path }}">{{ source_data.path }}</a></td>
+                    <td>{{ source_data.pageviews }}</td>
+                </tr>
+            {% endfor %}
+            </table>
+        </section>

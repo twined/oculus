@@ -1,11 +1,15 @@
 
-        <h3>Populært innhold</h3>
-        <table class="table table-striped">
-        {% for popular_url, popular_data in data.items %}
+        <section class="panel panel-default">
+            <section class="panel-heading font-bold">
+                Populært innhold
+            </section>
+            <table class="table table-striped">
+            {% for popular_url, popular_data in data.items %}
 
-            <tr>
-                <td>{{ popular_url }}</td>
-                <td>{{ popular_data.pageviews }}</td>
-            </tr>
-        {% endfor %}
-        </table>
+                <tr>
+                    <td>{{ popular_url }}</td>
+                    <td>{{ popular_data.pageviews }}</td>
+                </tr>
+            {% endfor %}
+            </table>
+        </section>

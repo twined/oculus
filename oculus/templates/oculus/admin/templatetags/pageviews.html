@@ -1,7 +1,45 @@
-<h3>Besøkende</h3>
-<dl>
-    <dt>{{ data.pageviews }}</dt>
-    <dd>treff siden begynnelsen</dd>
-    <dt>{{ data.visits }}</dt>
-    <dd>besøk siden begynnelsen</dd>
-</dl>
+<section class="panel panel-default">
+  <div class="row m-l-none m-r-none bg-light lter">
+    <div class="col-sm-6 col-md-3 padder-v b-r b-light">
+      <span class="fa-stack fa-2x pull-left m-r-sm">
+        <i class="fa fa-circle fa-stack-2x text-info"></i>
+        <i class="fa fa-male fa-stack-1x text-white"></i>
+      </span>
+      <a class="clear" href="#">
+        <span class="h3 block m-t-xs"><strong>{{ data.pageviews }}</strong></span>
+        <small class="text-muted text-uc">treff totalt</small>
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-3 padder-v b-r b-light lt">
+      <span class="fa-stack fa-2x pull-left m-r-sm">
+        <i class="fa fa-circle fa-stack-2x text-success"></i>
+        <i class="fa fa-male fa-stack-1x text-white"></i>
+      </span>
+      <a class="clear" href="#">
+        <span class="h3 block m-t-xs"><strong>{{ data.visits }}</strong></span>
+        <small class="text-muted text-uc">besøk totalt</small>
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-3 padder-v b-r b-light">
+      <span class="fa-stack fa-2x pull-left m-r-sm">
+        <i class="fa fa-circle fa-stack-2x text-info"></i>
+        <i class="fa fa-male fa-stack-1x text-white"></i>
+      </span>
+      <a class="clear" href="#">
+        <span class="h3 block m-t-xs"><strong>{{ data.week_pageviews }}</strong></span>
+        <small class="text-muted text-uc">treff denne uke</small>
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-3 padder-v b-r b-light lt">
+      <span class="fa-stack fa-2x pull-left m-r-sm">
+        <i class="fa fa-circle fa-stack-2x text-success"></i>
+        <i class="fa fa-male fa-stack-1x text-white"></i>
+      </span>
+      <a class="clear" href="#">
+        <span class="h3 block m-t-xs"><strong>{{ data.week_visits }}</strong></span>
+        <small class="text-muted text-uc">besøk denne uke</small>
+      </a>
+    </div>
+
+  </div>
+</section>
